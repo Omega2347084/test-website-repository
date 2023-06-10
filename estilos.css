@@ -1,0 +1,299 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;
+
+}
+
+body {
+
+    background: #dcdde1;
+    color: #aaa690;
+    font-size: 16px;
+    font-family: 'Oswald', sans-serif;
+
+}
+
+a {
+ color:#353b48;
+ text-decoration: none;
+
+}
+
+ul{
+    list-style: none;
+
+}
+
+.container{
+    width: 90%;
+    margin: auto;
+
+}
+
+/* Navigation */
+
+.nav-main {
+    font-size: 17px;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    height: 60px;
+    padding: 20px 0;
+
+}
+
+.nav-brand{
+    width: 50px;
+
+}
+
+/* NAV LEFT*/
+.nav-main ul {
+
+    display: flex;
+
+}
+
+.nav-main ul li {
+    padding: 10px;
+    font-weight: bolder;
+
+}
+
+.nav-main ul li a{
+    padding: 2px;
+}
+.nav-main ul li a:hover {
+    border-bottom: 2px solid #aaa69d;
+    font-weight: lighter;
+
+}
+
+.nav-main ul .nav-menu {
+    flex: 1;
+    margin-left: 20px;
+}
+
+
+
+
+button {
+    font-size: 18px;
+    color: #e1e1e1;
+    font-family: inherit;
+    font-weight: 800;
+    cursor: pointer;
+    position: relative;
+    border: none;
+    background: none;
+    text-transform: uppercase;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: color;
+  }
+  
+  button:focus,
+  button:hover {
+    color: black;
+  }
+  
+  button:focus:after,
+  button:hover:after {
+    width: 100%;
+    left: 0%;
+  }
+  
+  button:after {
+    content: "";
+    pointer-events: none;
+    bottom: -2px;
+    left: 50%;
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: gray ;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: width, left;
+  }
+
+  /*  SHOWCASE */
+hr {
+    margin: 10px 0;
+}
+
+  .h2{
+    color: whitesmoke;
+  }
+
+  .showcase{
+    width: 100%;
+    height: 550px;
+    background: url('pexels-erik-mclean-4062472.jpg') no-repeat center center/cover;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: flex-end;
+    color: white;
+    font-weight: bolder;
+    
+  }
+
+  .showcase h2, 
+  .showcase p{
+
+    margin-bottom: 10px;
+  }
+
+
+  .btn{
+    cursor: pointer;
+    display: inline-block;
+    border: 0;
+    font-weight: bold;
+    padding: 10px 20px;
+    background: #4b4b4b;
+    color:antiquewhite;
+    font-size: 15px;
+    border: 1px solid antiquewhite;
+    margin: 10px 0;
+
+  }
+
+  .btn:hover {
+    opacity: .6;
+  }
+
+  /* CAR CARDS*/
+
+  .car-cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 25px;
+    margin: 15px 0;
+    
+  }
+
+.car-cards img{
+    width: 100%;
+    height: 180px;
+ 
+}
+.car-cards h3{
+    color: black;
+    font-weight: bold;
+    font-size: 15px;
+    margin: 10px 0
+
+}
+
+.car-cards p {
+    color: black;
+
+}
+
+.car-cards a{
+
+padding: 10px 0;
+color:#3d3d3d;
+text-transform: uppercase;
+display: inline-block;
+font-weight: bold;
+
+}
+.car-cards a:hover{
+    color:gray;
+    border-bottom: 1px gray;
+}
+
+/* BANNER ONE */
+ .Banner {
+    width: 100%;
+    height: 350px;
+    background: url('Used-Car-Dealers-Dealership-Keys.jpg');
+    margin-bottom: 40px;
+
+
+
+ }
+
+ .Banner .content {
+    
+    width: 40%;
+    padding: 90px 0 0 30px;
+    color: #2C3A47;
+
+ }
+
+ /* SOCIAL*/
+
+ .social{
+  margin: 50px;
+
+ }
+
+ .social p{
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 20px;
+
+ }
+
+ .links{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+ }
+
+ .links a{
+  margin: 0 30px
+ }
+
+ .links i{
+  font-size: 3rem;
+ }
+
+ /*FOOTER LINKS*/
+
+ .footerLinks{
+  background: gray;
+  color:white;
+  
+  font-size: 12px;
+  padding: 35px 0;
+ }
+
+ .footerContainer{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: center;
+ }
+ .footerContainer ul li:hover{
+  opacity: 0.7;
+  font-weight: bold;
+ }
+
+ .footerContainer ul{
+  margin: 0 auto;
+
+ }
+
+ .footerContainer ul li {
+  line-height: 2.8;
+  
+ }
+
+ .footer{
+  background: gray;
+  color: #a4b0be;
+  font-size: 12px;
+  text-align: center;
+  padding: 20px 0;
+  padding-bottom: 20px;
+
+ }
+
